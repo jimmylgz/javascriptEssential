@@ -26,6 +26,16 @@ function show(){
     }
 show();
     
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
+// console.log(functionVar); // Throws ReferenceError
+// console.log(functionLet); // Throws ReferenceError
+// console.log(functionConst); // Throws ReferenceError
+
+{
+    let testVar = 0;
+    const testVar2 = 1;
+    var testVar3 = 2;
+
+    testVar = 3;
+    // testVar2 = 4;
+    testVar3 = 5;
+}
